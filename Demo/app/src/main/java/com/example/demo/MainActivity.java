@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateFirebase(TextView tvResult){
-        id="0428fe8c-6503-4dbf-a247-b7572e16f5f4";
+        id="524be348-2ab7-40d9-960f-2fe849a39378";
         toDo=new ToDo(id, "Sua title 1", "Sua content 1");
         database.collection("TODO").document(toDo.getId()).update(toDo.convertHashMap())
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void deleteFirebase(TextView tvResult){
-        id="0428fe8c-6503-4dbf-a247-b7572e16f5f4";
+        id="524be348-2ab7-40d9-960f-2fe849a39378";
         database.collection("TODO").document(id)
                 .delete()
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
